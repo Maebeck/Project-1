@@ -1,14 +1,15 @@
+var from = document.getElementById('#origin');
+var to = document.getElementById('#destination');
+var date = document.getElementById('#start-date')
+
 $(document).ready(function () {
     console.log("ready!");
-// var from = document.getElementById('#origin');
-// var to = document.getElementById('#destination');
 
-    function skyscannerAPI(from, to, date1) {
-         var from = document.getElementById('#origin');
-         var to = document.getElementById('#destination');
+
+    function skyscannerAPI(from, to, date) {
         $(".loadingBar1").show();
-        //var date1 = moment(date).format("YYYY-MM-DD");         //change date format to be used in flight API
-        // var dateFormat = moment(date).format("MMM DD, YYYY"); //change Date format to display on webpage
+        var date1 = moment(date).format("YYYY-MM-DD");         //change date format to be used in flight API
+        var dateFormat = moment(date).format("MMM DD, YYYY"); //change Date format to display on webpage
         var settings = {
             "async": true,
             "crossDomain": true,
@@ -63,8 +64,8 @@ $(document).ready(function () {
         pageNo = 1
         var destination = $('#destination').val().trim();
         var origin = $('#origin').val().trim();
-        var startDate = $('#start-date').val().trim();
-        var endDate = $('#end-date').val().trim();
+        var startDate = $('#start-date').val();
+        var endDate = $('#end-date').val();
         $(".flight").empty();
 
         if (origin === "" || destination === "" || startDate === "" || endDate === "") {
@@ -72,7 +73,12 @@ $(document).ready(function () {
             $('.modalAccept').focus();
             return false;       
         }
-
+        if (!moment(startDate).isValid() || !moment(endDate).isValid()){
+            $('#modalDate').modal('open');
+            $(".modalAccept").focus();
+            return false;
+        }
+    skyscannerAPI(origin, destination, startDate);
     })
 
 
