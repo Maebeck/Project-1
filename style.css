@@ -1,3 +1,17 @@
-#siteName {
-    
+#sitename {
+    font-weight: bold;
+}
+.jumbotron {
+    text-align: center;
+    padding-top: 0mm;
+}
+#trip-details {
+    padding: 25px 25px 25px 25px;
+}
+input,
+label {
+    margin: .4rem 0;
+}
+body {
+    background-color: gra;
 }
