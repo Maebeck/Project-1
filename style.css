@@ -13,9 +13,9 @@ label {
 }
 body {
     font-family: 'Libre Franklin', sans-serif;
-    background-color: #F8F8FF;
+    background-color: white;
 }
-.blink {
+/* .blink {
 	-webkit-animation: blink .75s linear infinite;
 	-moz-animation: blink .75s linear infinite;
 	-ms-animation: blink .75s linear infinite;
@@ -51,7 +51,15 @@ body {
 	50% { opacity: 1; }
 	50.01% { opacity: 0; }
 	100% { opacity: 0; }
-}
-#go {
+} */
+/* .searchBtn {
     text-align: center;
+    padding-top: 25px;
+} */
+.floatRight {
+    float:right; 
+    clear:right;
+    margin-left:20px;
+    margin-right: 75px;
+    margin-top: 25px;
 }
