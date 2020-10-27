@@ -8,7 +8,61 @@
 #trip-details {
     padding: 25px 25px 25px 25px;
 }
-input,
 label {
     margin: .4rem 0;
 }
+<<<<<<< HEAD
+=======
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    background-color: white;
+}
+/* .blink {
+	-webkit-animation: blink .75s linear infinite;
+	-moz-animation: blink .75s linear infinite;
+	-ms-animation: blink .75s linear infinite;
+	-o-animation: blink .75s linear infinite;
+	animation: blink .75s linear infinite;
+}
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-o-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+} */
+/* .searchBtn {
+    text-align: center;
+    padding-top: 25px;
+} */
+.floatRight {
+    float:right; 
+    clear:right;
+    margin-left:20px;
+    margin-right: 75px;
+    margin-top: 25px;
+}
+>>>>>>> a7eaaf533b9e2564266fa069190b8212a9deb26c
