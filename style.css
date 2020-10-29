@@ -51,7 +51,8 @@ body {
 	50% { opacity: 1; }
 	50.01% { opacity: 0; }
 	100% { opacity: 0; }
-} */
+
+} 
  .searchBtn {
     text-align: center;
     padding-top: 25px;
@@ -60,6 +61,6 @@ body {
     float:right; 
     clear:right;
     margin-left:20px;
-    margin-right: 75px;
+    margin-right: 100px;
     margin-top: 25px;
 }
