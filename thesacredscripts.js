@@ -1,13 +1,16 @@
 var from = document.getElementById('#origin');
 var to = document.getElementById('#destination');
-var date = document.getElementById('#start-date')
-
+var date = document.getElementById('#start-date');
+console.log(to);
+console.log(date);
 $(document).ready(function () {
     console.log("ready!");
 
 
     function skyscannerAPI(from, to, date) {
-        $(".loadingBar1").show();
+        //$(".loadingBar1").show();
+        console.log(to);
+        console.log(date);
         var date1 = moment(date).format("YYYY-MM-DD");         //change date format to be used in flight API
         var dateFormat = moment(date).format("MMM DD, YYYY"); //change Date format to display on webpage
         var settings = {
@@ -33,7 +36,7 @@ $(document).ready(function () {
                 </tr>
                 `
                 $("#flight-table").append(row2);
-                $(".loadingBar1").hide();
+                //$(".loadingBar1").hide();
             }
             else {
                 for (i = 0; i < response.Carriers.length; i++) {
@@ -48,7 +51,7 @@ $(document).ready(function () {
                     </tr>
                     `
                         $("#flight-table").append(row2); //appends flight available to the table.
-                        $(".loadingBar1").hide(); //hides the loading bar after search complete
+                        //$(".loadingBar1").hide(); //hides the loading bar after search complete
     
                     }
     
@@ -58,14 +61,14 @@ $(document).ready(function () {
             $("#flight-table").trigger("update"); // sort table by flight departure date
         });
     }
-    $('#Go').on("click", function (event){
+    $('.searchBtn').on("click", function (event){
         event.preventDefault();
         $('#events').empty();
         pageNo = 1
-        var destination = $('#destination').val().trim();
-        var origin = $('#origin').val().trim();
-        var startDate = $('#start-date').val();
-        var endDate = $('#end-date').val();
+        var destination = $('#destination').val();
+        var origin = $('#origin').val();
+        var startDate = $('#start-date');
+        var endDate = $('#end-date');
         $(".flight").empty();
 
         if (origin === "" || destination === "" || startDate === "" || endDate === "") {
@@ -90,8 +93,7 @@ $(document).ready(function () {
 
 
 
-
-
+// test for stuff
 
 
 

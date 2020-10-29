@@ -11,13 +11,11 @@
 label {
     margin: .4rem 0;
 }
-<<<<<<< HEAD
-=======
 body {
     font-family: 'Libre Franklin', sans-serif;
     background-color: white;
 }
-/* .blink {
+.blink {
 	-webkit-animation: blink .75s linear infinite;
 	-moz-animation: blink .75s linear infinite;
 	-ms-animation: blink .75s linear infinite;
@@ -54,10 +52,10 @@ body {
 	50.01% { opacity: 0; }
 	100% { opacity: 0; }
 } */
-/* .searchBtn {
+ .searchBtn {
     text-align: center;
     padding-top: 25px;
-} */
+}
 .floatRight {
     float:right; 
     clear:right;
@@ -65,4 +63,3 @@ body {
     margin-right: 75px;
     margin-top: 25px;
 }
->>>>>>> a7eaaf533b9e2564266fa069190b8212a9deb26c

@@ -14,31 +14,6 @@
             integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
             crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
-
-
-<<<<<<< HEAD
-    <form id="trip-details">
-        <div class="form-group">
-            <label> City of Origin </label>
-           <select id = "origin">
-               <option value = "LAX">Los Angeles</option>
-               <option value = "IAH">Houston</option>
-               <option value = "SLC">Salt Lake City</option>
-               <option value = "DEN">Denver</option>
-               <option value = "MCO">Orlando</option>
-           </select>
-        </div>
-        <div class="form-group">
-            <label> Destination City </label>
-            <select id = "destination">
-                <option value = "LAX>Los Angeles</option>
-                <option value = "IAH">Houston</option>
-                <option value = "SLC">Salt Lake City</option>
-                <option value = "DEN">Denver</option>
-                <option value = "MCO">Orlando</option>
-            </select>
-=======
-        <link rel="stylesheet" href="assets/css/materialize.min.css">
         <link rel="stylesheet" href="style.css">
         <title>CEDS Travel</title>
     </head>
@@ -48,40 +23,44 @@
             <img src="https://static.thenounproject.com/png/84-200.png" alt="Plane" style="padding: 0px;">
             <h1 class="display-4" id="sitename">CEDS Travel</h1>
             <p><i>Finding you the cheapest flights to the coolest events!</i></p>
->>>>>>> a7eaaf533b9e2564266fa069190b8212a9deb26c
         </div>
         <img src="images/planeanimation.gif" alt="" width="350" class="floatRight">
         <form id="trip-details" class="col-md-6">
-            <div class="form-group">
-                <label> City of Origin </label>
-                <input id="origin" class="form-control autocomplete">
-            </div>
-            <div class="form-group">
-                <label> Destination City </label>
-                <input id="destination" class="form-control autocomplete">
-            </div>
+            <form id="trip-details">
+                <div class="form-group">
+                    <label> City of Origin </label>
+                   <select id = "origin">
+                       <option value = "LAX">Los Angeles</option>
+                       <option value = "IAH">Houston</option>
+                       <option value = "SLC">Salt Lake City</option>
+                       <option value = "DEN">Denver</option>
+                       <option value = "MCO">Orlando</option>
+                   </select>
+                </div>
+                <div class="form-group">
+                    <label> Destination City </label>
+                    <select id = "destination">
+                        <option value = "LAX">Los Angeles</option>
+                        <option value = "IAH">Houston</option>
+                        <option value = "SLC">Salt Lake City</option>
+                        <option value = "DEN">Denver</option>
+                        <option value = "MCO">Orlando</option>
+                    </select>
             <label for="start">Departing:</label>
 
             <input type="date" id="start-date" name="trip-start">
             <label for="start">Returning:</label>
 
             <input type="date" id="end-date" name="trip-end">
-            <div class="searchBtn"><i class="fa fa-plane"></i></div>
+            <button class="searchBtn"><i class="fa fa-plane"></i></button>
         </form>
-        <script>
-
-        </script>
+        <div id = "flight-table"></div>
     </body>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="thesacredscripts.js"></script>
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="thesacredscripts.js"></script>
 </body>
-
 </html>
