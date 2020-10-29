@@ -67,8 +67,8 @@ $(document).ready(function () {
         pageNo = 1
         var destination = $('#destination').val();
         var origin = $('#origin').val();
-        var startDate = $('#start-date');
-        var endDate = $('#end-date');
+        var startDate = $('#start-date').val();
+        var endDate = $('#end-date').val();
         $(".flight").empty();
 
         if (origin === "" || destination === "" || startDate === "" || endDate === "") {
