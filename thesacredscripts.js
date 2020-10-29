@@ -67,7 +67,7 @@ $(document).ready(function () {
         pageNo = 1
         var destination = $('#destination').val();
         var origin = $('#origin').val();
-        var startDate = $('#start-date');
+        var startDate = $('#start-date').val();
         var endDate = $('#end-date');
         $(".flight").empty();
 
