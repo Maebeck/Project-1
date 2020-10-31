@@ -6,61 +6,160 @@
     padding-top: 0mm;
 }
 #trip-details {
-    padding: 25px 25px 25px 25px;
+  margin-left: 15px;
+  padding-bottom: 20px;
 }
 label {
     margin: .4rem 0;
 }
 body {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: white;
 }
-.blink {
-	-webkit-animation: blink .75s linear infinite;
-	-moz-animation: blink .75s linear infinite;
-	-ms-animation: blink .75s linear infinite;
-	-o-animation: blink .75s linear infinite;
-	animation: blink .75s linear infinite;
-}
-@-webkit-keyframes blink {
-	0% { opacity: 1; }
-	50% { opacity: 1; }
-	50.01% { opacity: 0; }
-	100% { opacity: 0; }
-}
-@-moz-keyframes blink {
-	0% { opacity: 1; }
-	50% { opacity: 1; }
-	50.01% { opacity: 0; }
-	100% { opacity: 0; }
-}
-@-ms-keyframes blink {
-	0% { opacity: 1; }
-	50% { opacity: 1; }
-	50.01% { opacity: 0; }
-	100% { opacity: 0; }
-}
-@-o-keyframes blink {
-	0% { opacity: 1; }
-	50% { opacity: 1; }
-	50.01% { opacity: 0; }
-	100% { opacity: 0; }
-}
-@keyframes blink {
-	0% { opacity: 1; }
-	50% { opacity: 1; }
-	50.01% { opacity: 0; }
-	100% { opacity: 0; }
-
-} 
- .searchBtn {
+.searchBtn {
     text-align: center;
-    padding-top: 25px;
 }
-.floatRight {
+#weather {
     float:right; 
     clear:right;
-    margin-left:20px;
-    margin-right: 100px;
-    margin-top: 25px;
+}
+#flight-table {
+  width: 100%;
+  border-collapse: collapse;
+	border: 1px solid #ddd;
+	float:left; 
+	width:50%;
+  width: 1200px;
+  padding-left: 20px;
+}
+#flight-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #343a40;
+  color: white;
+}
+#flight-table 
+  tr:hover {
+    background-color: #ddd;
+}
+#flight-table td, #flight-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#flight-table tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+.eventHeading {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#table-head {
+	text-align: center;
+}
+.dates {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+/* #loadingBar1 { 
+    height: 5px;
+    position: relative;
+    background: #f3efe6;
+    background-color: grey;
+} */
+#plane {
+	animation: rotation 3s infinite linear alternate;
+  }
+  
+  @keyframes rotation {
+	to {
+	  transform: rotate(35deg);
+	}
+}
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #343a40;
+  text-align: center;
+}
+/* .footer {
+	text-align: center;
+	box-sizing: border-box;
+} */
+
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #343a40;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: royalblue;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: black;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+#weather {
+  margin-top: 25px;
 }
